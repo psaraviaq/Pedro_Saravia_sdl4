@@ -1,7 +1,14 @@
 export class Jugador {
-  constructor() {
-
+  constructor(nombre, nivel) {
+    this.nombre = nombre;
+    this.nivel = nivel;
   }
 
+  informacion() {
+    return this.nombre + " ha alcanzado el Nivel " + this.nivel + "!";
+  }
 
+  subirNivel() {
+    this.nivel += 1;
+  }
 }
